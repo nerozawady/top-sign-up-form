@@ -1,0 +1,154 @@
+@font-face {
+    font-family: odin;
+    src: url("./Norse-Bold.otf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #232323;
+}
+
+.main {
+    display: flex;
+}
+
+.left-section {
+    position: relative;
+    width: 500px;
+    background-image: url("./background-image.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 200px;
+    padding-block: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.title__logo {
+    width: 80px;
+}
+
+.title__text {
+    font-size: 80px;
+    font-family: odin;
+    font-weight: lighter;
+}
+
+.credits {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.credits__link {
+    color: white;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background-color: #f9fafb;
+    max-width: 800px;
+}
+
+.right-section>* {
+    margin-left: 50px;
+}
+
+.heading__text {
+    font-size: 22px;
+
+}
+
+.heading__text:last-child {
+    margin-top: 20px;
+}
+
+.form-outer {
+    margin: 0;
+}
+
+.form-inner {
+    background-color: white;
+    border: none;
+    padding: 20px 30px;
+    padding-left: 50px;
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-inner__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.form-inner__inputs-line {
+    display: flex;
+    gap: 50px;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.form-inner__input-block {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+}
+
+.form-inner__label {
+    text-transform: uppercase;
+    color: #2d2d2d;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.form-inner__input {
+    padding: 3px 10px;
+    border: rgb(209, 209, 209) 1px solid;
+    border-radius: 4px;
+}
+
+.form-inner__input:focus {
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.invalid {
+    border-color: red;
+}
+
+.form-inner__error {
+    color: red;
+}
+
+.form-outer__submit {
+    margin-left: 50px;
+    color: white;
+    background-color: #596d48;
+    padding: 15px 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.login__link {
+    color: #596d48;
+}

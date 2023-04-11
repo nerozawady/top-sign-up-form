@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Sign Up Form</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="main">
+            <div class="left-section">
+                <div class="title">
+                    <img class="title__logo" src="./odin-logo.png" alt="A cartoonish image of Odin's face">
+                    <h1 class="title__text">Odin</h1>
+                </div>
+                <div class="credits">Photo by <a class="credits__link"
+                        href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a class="credits__link"
+                        href="https://unsplash.com">Unplash</a></div>
+            </div>
+            <div class="right-section">
+                <div class="heading">
+                    <p class="heading__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id animi quos maxime aut odit ullam
+                        incidunt
+                        aliquid quis dolor molestiae cupiditate voluptas, eos earum? Ex harum assumenda est laborum
+                        facilis!
+                    </p>
+                    <p class="heading__text">You <em>know</em> you want to.</p>
+                </div>
+
+                <form action="POST" class="form-outer">
+                    <fieldset class="form-inner">
+                        <div class="form-inner__title">Let's do this!</div>
+
+                        <div class="form-inner__inputs-line">
+                            <div class="form-inner__input-block">
+                                <label class="form-inner__label" for="first-name">First Name</label>
+                                <input class="form-inner__input" type="text" name="firstName" id="first-name" required>
+                                <div class="form-inner__error" id="first-name-error"></div>
+                            </div>
+                            <div class="form-inner__input-block">
+                                <label class="form-inner__label" for="last-name">Last Name</label>
+                                <input class="form-inner__input" type="text" name="lastName" id="last-name" required>
+                                <div class="form-inner__error" id="last-name-error"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-inner__inputs-line">
+                            <div class="form-inner__input-block">
+                                <label class="form-inner__label" for="email">Email</label>
+                                <input class="form-inner__input" type="email" name="email" id="email" required>
+                                <div class="form-inner__error" id="email-error"></div>
+                            </div>
+
+                            <div class="form-inner__input-block">
+                                <label class="form-inner__label" for="phone">Phone Number</label>
+                                <input class="form-inner__input" type="tel" name="phone" id="phone">
+                                <div class="form-inner__error" id="phone-error"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-inner__inputs-line">
+                            <div class="form-inner__input-block">
+                                <label class="form-inner__label" for="password">Password</label>
+                                <input class="form-inner__input" type="password" name="password" id="password" required>
+                                <div class="form-inner__error" id="password-error"></div>
+                            </div>
+
+                            <div class="form-inner__input-block">
+                                <label class="form-inner__label" for="confirm-password">Confirm Password</label>
+                                <input class="form-inner__input" type="password" name="confirmPassword"
+                                    id="confirm-password" required>
+                                <div class="form-inner__error" id="confirm-password-error"></div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <input class="form-outer__submit" type="submit" value="Create Account">
+                </form>
+
+                <div class="login__text">Already have an account? <a class="login__link" href="">Log in</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
